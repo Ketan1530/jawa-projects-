@@ -1,0 +1,85 @@
+import java.util.Scanner;
+class range{
+    public int genrate(int max, int min) (
+       return (int) (Math.random()*(max-min+1)+min);
+    } 
+}
+
+public class Number_Game{
+    Run | Debug
+    public static void main(String[] args)
+        Scanner s=new Scanner(System.in);
+        range rg-new range();
+        int TA-0;
+        int win-0;
+
+       while(true) [
+           System.out.println(x: "Enter the minimum number:");
+           int min-s.nextInt();
+           System.out.println(x: "Enter the maximum number: ");
+           int max-s.nextInt();
+           s.nextLine();
+           int c-rg.genrate(max,min);
+           int A-0;
+
+           while(true){
+            System.out.println("Guesss a number between "+min+" and "+max);
+            int g-s.nextInt();
+            A++;
+              if(g>c){
+                System.out.println(x: "Its Greater");
+            }
+            else if(g<c){
+                System.out.println(x: "Its lower");
+
+            }
+
+            else{
+                System.out.println(x: "Correct guess");
+                win++;
+                break;
+            }
+        }
+        TA-TA+A;
+        System.out.println("Attempt="+A); System.out.println("Wins="win);
+        
+        double winrate-(double) win/TA*100;
+        System.out.printf(format:"your winrate is %.2f%X\n",winrate);
+        System.out.println(x:"Do you want to play again (y / n)");
+        String PA-s.next();
+        if(IPA.equalsIgnoreCase(anotherString:"y")){
+            s.close();
+          package com;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class GuessTheNo {
+	public static void main(String[]args)
+	{
+		int minNum=1 ,maxNum=10;
+
+		Random random = new Random();
+
+		int randomNumber = random.nextInt(maxNum - minNum + 1) + minNum;		
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Guess the Num between"+minNum+"and"+maxNum+":");
+
+		int UserGuess=sc.nextInt();
+
+		if(UserGuess == randomNumber)
+		{
+			System.out.println("Congratulations!  Your guess is correct");
+		}
+		else
+		{
+			System.out.println("Sorry the correct number was:"+ randomNumber);
+		}
+
+		sc.close();
+	}
+}
+          
+  
+       
